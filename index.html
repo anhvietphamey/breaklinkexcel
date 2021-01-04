@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hướng dẫn break link excel</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="shortcut icon" href="https://eycanvascore-sg.ey.net/icons/favicon.ico" type="image/x-icon">
+</head>
+
+<body>
+    <h2>Hướng dẫn Break Link - lột trần bộ mặt những ông link "cứng đầu"</h2>
+    <p>Nếu bạn là một con auditor thuần chủng, hoặc một accountant chính hiệu, thì chắc hẳn bạn đã đôi lần bát gặp một vài cái link không thể break.Vậy hãy tham khảo bài viết dưới đây, chỉ với vài click cùng với khả năng Copy-Paste thiên bẩm, bạn sẽ loại bỏ được những cái link cứng đầu kia trong nháy mắt. Let's gô.</p>
+    <div class="steps">
+        <h5>Bước 1: Bấm tổ hợp <code>Alt</code> + <code>F11</code> để mở cửa sổ Microsoft Visual Basic for Application (VBA)</h5>
+        <img src="images\step1.jpg" alt="step 1" width="900px" height="506px">
+        <p>Tại màn hình này, chúng ta cần thấy được panel Project Explorer để tìm đến file cần Break Link.</p>
+        <p>Nếu panel này chưa hiện ra, hãy ấn tổ hợp phím <code>Ctrl</code> + <code>R</code>, hoặc vào menu
+            <code>View</code> > <code>Project Explorer</code>
+        </p>
+        <h5>Bước 2: Right-click 1 sheet bất kỳ của file cần break link, chọn <code>Insert</code> > <code>Module</code></h5>
+        <img src="images\step2.jpg" alt="step 2">
+        <p>Copy đoạn code dưới đây, paste vào module vừa tạo và bấm F5</p>
+        <pre>
+Sub unhidename()
+For Each n In ThisWorkbook.Names
+n.Visible = True
+Next n
+End Sub</pre>
+    <p>Bây giờ, hãy quay lại file excel chứa link, vào <code>Formulas</code> > <code>Name Manager</code>, delete toàn bộ đống name vô tích sự kia đi.</p>
+    <p>Sau đó check lại xem chú link kia còn đấy không? Oh wao! Hey, where are you now m*th*r f**ker dumbass links? Alo? Alo???</p>
+    </div>
+    <p class="credit">Cám ơn cháu <a href="mailto:Hieu.Nhu.Le@vn.ey.com">Hiểu Như L</a> đã đóng góp snapshot cho bài viết này.</p>
+
+    <p class="copyright">&copy; AVP 2020. All rights reserved.</p>
+</body>
+
+</html>
