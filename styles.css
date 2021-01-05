@@ -11,21 +11,21 @@ code {
     font-family: 'Courier New', Courier, monospace;
     background-color: #e8efeb;
 }
-
 pre {
     font-family: 'Courier New', Courier, monospace;
     background-color: #e8efeb;
     width: 70%;
     }
-
 img {
     align-items: center;
 }
-
 .copyright {font-size: 0.7rem;}
 h6 {margin: 5px;}
 h5 {font-size: 1rem;}
 .credit {font-size: 0.8rem;}
-
 .step {width: 80%;}
 ::selection{color: #19456b;background-color: #19456b;}
+a:link {text-decoration: none !important;}
+a:visited {text-decoration: none;}
+a:hover {text-decoration: none;}
+a:active {text-decoration: none;}

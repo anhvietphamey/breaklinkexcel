@@ -12,6 +12,8 @@
 <body>
     <h2>Hướng dẫn Break Link - lột trần bộ mặt những ông link "cứng đầu"</h2>
     <p>Nếu bạn là một con auditor thuần chủng, hoặc một accountant chính hiệu, thì chắc hẳn bạn đã đôi lần bắt gặp một vài cái link không thể break.Vậy hãy tham khảo bài viết dưới đây, chỉ với vài click cùng với khả năng Copy-Paste thiên bẩm, bạn sẽ loại bỏ được những cái link cứng đầu kia trong nháy mắt. Let's gô.</p>
+    <br>
+    <p>Nguyên nhân của các link mà break xong vẫn còn nguyên là do file bạn đang dùng đã được kế thừa từ nhiều đời, hoặc bạn đã move sheet từ một file của tiền bối hoặc từ PBC,...mà trong đó có các name tham chiếu đến những file khác bên ngoài và các name đã bị hidden. Các name này không hiện ra khi bạn mở cửa sổ Name Manager. Vì vậy, để break link thì trước tiên cần make it visible.</p>
     <div class="steps">
         <h5>Bước 1: Bấm tổ hợp <code>Alt</code> + <code>F11</code> để mở cửa sổ Microsoft Visual Basic for Application (VBA)</h5>
         <img src="images\step1.jpg" alt="step 1" width="900px" height="506px">
@@ -28,10 +30,21 @@ For Each n In ThisWorkbook.Names
 n.Visible = True
 Next n
 End Sub</pre>
-    <p>Bây giờ, hãy quay lại file excel chứa link, vào <code>Formulas</code> > <code>Name Manager</code>, delete toàn bộ đống name vô tích sự kia đi.</p>
+    <p>Bây giờ, hãy quay lại file excel chứa link, vào <code>Formulas</code> > <code>Name Manager</code>. Đây rồi, một đống name vô tích sự đã hiện lên, hãy xoá hết đi.</p>
     <p>Sau đó check lại xem chú link kia còn đấy không? Oh wao! Hey, where are you now m*th*r f**ker dumbass links? Alo? Alo???</p>
-    </div>
-    <p class="credit">Cám ơn cháu <a href="mailto:Hieu.Nhu.Le@vn.ey.com">Hiểu Như L</a> đã đóng góp snapshot cho bài viết này.</p>
+    
+<h5>Cuối cùng, đừng quên xoá module bạn vừa tạo để có thể save được file dưới dạng <code>.xlsx</code></h5>
+<p>Right-click vào tên module, chọn <code>Remove</code></p>
+<img src="images\step3.png" alt="step 3"><br>
+<p>Chọn <code>No</code> khi được hỏi.</p>
+<img src="images\step4.png" alt="step 4">
+<p>Còn nếu bạn vẫn muốn giữ lại đoạn code kia thì cần save file với extension <code>.xlsm</code> hoặc <code>.xlsb</code></p>
+<p>That's it.</p>
+</div>
+<div class="credit">
+    <p>Cám ơn <a href="mailto:Hieu.Nhu.Le@vn.ey.com">Hieu Nhu Le</a> đã đóng góp snapshot cho bài viết này.</p>
+</div>    
+
 
     <p class="copyright">&copy; AVP 2020. All rights reserved.</p>
 </body>
