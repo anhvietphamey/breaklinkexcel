@@ -25,7 +25,7 @@ h5 {font-size: 1rem;}
 .credit {font-size: 0.8rem;}
 .step {width: 80%;}
 ::selection{color: #19456b;background-color: #19456b;}
-a:link {text-decoration: none !important;}
+a:link {text-decoration: none !important;color: black;}
 a:visited {text-decoration: none;}
-a:hover {text-decoration: none;}
+a:hover {text-decoration: none;color: green;}
 a:active {text-decoration: none;}
