@@ -9,12 +9,16 @@ body {
 }
 code {
     font-family: 'Courier New', Courier, monospace;
-    background-color: #e8efeb;
+    /*background-color: #e8efeb;*/
 }
 pre {
     font-family: 'Courier New', Courier, monospace;
-    background-color: #e8efeb;
-    width: 70%;
+  background-color: #e8efeb;
+  margin: 0; /* Reset default margin */
+  display: block; /* Ensure it's a block-level element */
+  position: relative; /* This ensures it's contained within .code-container */
+  width: auto; /* Let it be as wide as its content */
+  padding: 10px; /* Add some padding around the text */
     }
 img {
     align-items: center;
@@ -32,6 +36,7 @@ a:active {text-decoration: none;}
 
 .code-container {
   position: relative;
+    display: inline-block; /* This will make the container fit the content */
 }
 
 .copy-btn {
