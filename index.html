@@ -24,12 +24,16 @@
         <h5>Bước 2: Right-click 1 sheet bất kỳ của file cần break link, chọn <code>Insert</code> > <code>Module</code></h5>
         <img src="images\step2.jpg" alt="step 2" width="900px" height="506px">
         <p>Copy đoạn code dưới đây, paste vào module vừa tạo và bấm F5</p>
+        <div class = "code-container">
         <pre>
-Sub unhidename()
-For Each n In ThisWorkbook.Names
-n.Visible = True
-Next n
-End Sub</pre>
+            <code id = "code-block">
+            Sub AVP()
+            For Each n In ThisWorkbook.Names
+            n.Visible = True
+            Next n
+            End Sub</code></pre>
+            <button class="copy-btn" onclick="copyCode()">Copy</button>
+        </div>
     <p>Bây giờ, hãy quay lại file excel chứa link, vào <code>Formulas</code> > <code>Name Manager</code>. Loạt name vô nghĩa đã hiện lên, hãy xoá hết đi.</p>
     <p>Sau đó check lại xem chú link kia còn đấy không? Hết rồi chứ sao nữa! (Còn nữa thì cũng chịu, không chữa được)</p>
     
@@ -47,6 +51,26 @@ End Sub</pre>
 
 
     <p class="copyright">&copy; AVP 2020. All rights reserved.</p>
+<script>
+function copyCode() {
+  // Get the text from the code block
+  var code = document.getElementById('code-block').innerText;
+  // Create a temporary textarea element
+  var textarea = document.createElement('textarea');
+  // Set the value of the textarea to the code
+  textarea.value = code;
+  // Append the textarea to the document body (it doesn't have to be visible)
+  document.body.appendChild(textarea);
+  // Select the text inside the textarea
+  textarea.select();
+  // Copy the text to the clipboard
+  document.execCommand('copy');
+  // Remove the temporary textarea
+  document.body.removeChild(textarea);
+  // Optionally, alert the user that the text has been copied
+  alert('Code copied to clipboard!');
+}
+</script>
 </body>
 
 </html>
