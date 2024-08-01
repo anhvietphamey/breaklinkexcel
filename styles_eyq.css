@@ -35,15 +35,23 @@ p {
 }
 
 pre {
-    white-space: pre-wrap; /* Since CSS 2.1 */
-    white-space: -moz-pre-wrap; /* Mozilla, since 1999 */
-    white-space: -pre-wrap; /* Opera 4-6 */
-    white-space: -o-pre-wrap; /* Opera 7 */
-    word-wrap: break-word; /* Internet Explorer 5.5+ */
-    background-color: transparent;
-    border: none;
+    /*white-space: pre-wrap; /* Since CSS 2.1 */
+    /*white-space: -moz-pre-wrap; /* Mozilla, since 1999 */
+   /* white-space: -pre-wrap; /* Opera 4-6 */
+    /*white-space: -o-pre-wrap; /* Opera 7 */
+  /*  word-wrap: break-word; /* Internet Explorer 5.5+ */
+ /*   background-color: transparent;
+  /*  border: none;
     padding: 0;
-    margin: 0;
+    margin: 0;*/
+
+    display: block;
+    background-color: #f9f9f9; /* Different background color for code blocks */
+    padding: 10px; /* More padding for code blocks */
+    border-radius: 4px; /* Optional: rounded corners for code blocks */
+    box-shadow: none; /* No shadow for code blocks */
+    white-space: pre-wrap; /* Wrap text in code blocks */
+    word-break: break-word; /* Break long words in code blocks */
 }
 
 code {
