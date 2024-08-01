@@ -73,26 +73,9 @@ End Sub</code></pre>
 
 
     <p class="copyright">&copy; AVP 2020. All rights reserved.</p>
-<script>
-function copyCode() {
-  // Get the text from the code block
-  var code = document.getElementById('code-block').innerText;
-  // Create a temporary textarea element
-  var textarea = document.createElement('textarea');
-  // Set the value of the textarea to the code
-  textarea.value = code;
-  // Append the textarea to the document body (it doesn't have to be visible)
-  document.body.appendChild(textarea);
-  // Select the text inside the textarea
-  textarea.select();
-  // Copy the text to the clipboard
-  document.execCommand('copy');
-  // Remove the temporary textarea
-  document.body.removeChild(textarea);
-  // Optionally, alert the user that the text has been copied
-  alert('Code copied to clipboard!');
-}
-</script>
+
+<!-- Link to the external JavaScript file -->
+<script src="myscript.js"></script>
 </body>
 
 </html>
