@@ -49,6 +49,10 @@ pre {
 code {
     font-family: 'Courier New', Courier, monospace;
     font-size: 0.95rem;
+    background-color: #e8efeb; /* Light background color for inline code */
+    padding: 2px 4px; /* Padding around the text */
+    border-radius: 4px; /* Rounded corners for inline code */
+    box-shadow: inset 0 0 2px rgba(0, 0, 0, 0.1); /* Subtle inset shadow for inline code */
 }
 
 .copy-btn {
