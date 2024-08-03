@@ -10,6 +10,9 @@ body {
 h2 {
     color: #19456b;
     margin-bottom: 20px;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 p {
@@ -23,6 +26,9 @@ p {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     padding: 20px;
     margin-bottom: 20px;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .code-container {
@@ -90,6 +96,10 @@ img {
     margin: 0 auto; /* Center align image */
     border-radius: 4px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+#meme-use-your-head {
+margin-left: 0;
 }
 
 .credit {
